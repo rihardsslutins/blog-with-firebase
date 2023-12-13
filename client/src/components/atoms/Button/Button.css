@@ -1,0 +1,24 @@
+button {
+    padding: .5rem 1rem .5rem 1rem;
+    background-color: var(--accent-color);
+    border: 0;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+  
+    /* Default styles */
+    transform: translate(0, 0);
+    box-shadow: -5px 5px 0px 0px #000000;
+  
+    /* Hover styles */
+    &:hover {
+      transform: translate(-2px, 2px);
+      box-shadow: -3px 3px 0px 0px #000000;
+    }
+  
+    /* Active styles (when the button is being held down) */
+    &:active {
+      transform: translate(-5px, 5px);
+      box-shadow: none;
+    }
+  }
