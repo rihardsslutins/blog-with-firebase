@@ -1,0 +1,32 @@
+article {
+    background-color: var(--secondary-background-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+h2, p, span {
+    margin: 0;
+}
+
+h2 {
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+span {
+    color: var(--secondary-text-color)
+}
+
+.title-row,
+.content-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-row {
+    justify-content: space-between;
+}
