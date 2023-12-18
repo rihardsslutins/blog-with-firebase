@@ -1,12 +1,17 @@
-import Button from './components/atoms/Button/Button';
-import PostListItem from './components/molecules/PostListItem/PostListIem';
-import PostList from './components/organisms/PostList/PostList';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './components/pages/Home';
+
 import './App.css';
 
 function App() {
     return (
         <div className="App">
-            <PostList />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }
